@@ -14,12 +14,12 @@
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large tab">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="https://ommaity-nm2207.github.io/FinalProject/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Week 9 Prototype</a>
-    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white"><div class="tablinks" onclick="openCity(event, 'storyboard')" id="firstClick">Storyboard</div></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><div class="tablinks" onclick="openCity(event, 'diaryEntries')">Diary Entries</div></a>
+    <a href="https://ommaity-nm2207.github.io/FinalProject/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white tablinks">Final Project</a>
+    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a> -->
   </div>
 
@@ -32,120 +32,221 @@
   </div>
 </div>
 
+<div id="storyboard" class="tabcontent">
 <!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">STORY BOARD DRAFT</h1>
-  <p class="w3-xlarge">Template by w3.css</p>
-</header>
+  <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">STORY BOARD DRAFT</h1>
+    <p class="w3-xlarge">Template by w3.css</p>
+  </header>
 
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Background and Inspiration</h1>
-      <h5 class="w3-padding-32">I've been interested in Video Games for a really long time. As of lately, I've been extremely interested in interactive games because I've enjoyed the idea of the story shaping according to the decisions you make. I've been quite excited
-        at the prospect of making my own small video game with some witty dialogue and allowing the user to try and explore all the different options presented to them.</h5>
-
-      <p class="w3-text-grey">
-        For inspiration, I've taken some ideas from a 2 games.
-        <ol >Emily is away
-          <img src="resources/emilyIsAway.png">
-        </ol>
-
-        <ol> Sara is Missing
-          <img src="resources/saraIsMissing.png">
-        </ol>
-      </p>
-    </div>
-
-    <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
-    </div>
-  </div>
-</div>
-
-<!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
-    </div>
-
-    <div class="w3-twothird">
-      <h1>Objectives</h1>
-      <h5 class="w3-padding-32">
-        <p>I would like to make an interactive short story(more like a short teaser), with an additional maze like puzzle added to the game to allow the user to perform some problem solving. There will be a few alternative pathways for the story to progress (currently looking at 2). 
-          This will be the core and primary objective.</p>
-        <p> If time permits, I would love to implement a feature which would let the user undo their actions so that they can explore more easily. A timer could also be added to the puzzle</p>
-      </h5>
-      <p class="w3-text-grey"></p>
-    </div>
-  </div>
-</div>
-
-<!-- Third Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
       <div class="w3-twothird">
-        <h1>Data</h1>
-        <h5 class="w3-padding-32">
-          
-          <p>The dialogue which the user encounters will change depending on the input. The game will keep track of the sequence of inputs to change dialogue appropriately.</p>
-          <p>The maze will require a use of a 2d array to create a list of possible moves. Functions will be added to keep track of the users progress through the maze, as well as determine any conditions for game over (e.g hit the wall)</p>
-          <p>Since the game will require about 5 minutes per run, it might get frustrating to start the game from the beginning every time the page reloads. If time persists, I would like to implement a feature where the user can continue from where they left off (need to consult TA for what to learn for this feature)</p>
-        </h5>
-  
-        <p class="w3-text-grey"></p>
+        <h1>Background and Inspiration</h1>
+        <h5 class="w3-padding-32">I've been interested in Video Games for a really long time. As of lately, I've been extremely interested in interactive games because I've enjoyed the idea of the story shaping according to the decisions you make. I've been quite excited
+          at the prospect of making my own small video game with some witty dialogue and allowing the user to try and explore all the different options presented to them.</h5>
+
+        <p class="w3-text-grey">
+          For inspiration, I've taken some ideas from a 2 games.
+          <ol >Emily is away
+            <img src="resources/emilyIsAway.png">
+          </ol>
+
+          <ol> Sara is Missing
+            <img src="resources/saraIsMissing.png">
+          </ol>
+        </p>
       </div>
-  
+
       <div class="w3-third w3-center">
         <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
       </div>
     </div>
   </div>
 
-<!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+  <!-- Second Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+      </div>
+
+      <div class="w3-twothird">
+        <h1>Objectives</h1>
+        <h5 class="w3-padding-32">
+          <p>I would like to make an interactive short story(more like a short teaser). There will be a few alternative pathways for the story to progress (currently looking at 2). 
+            This will be the core and primary objective.</p>
+          <p> If time permits, I would love to implement a feature which would let the user undo their actions so that they can explore more easily. A timer could also be added to the puzzle</p>
+        </h5>
+        <p class="w3-text-grey"></p>
+      </div>
     </div>
-    <div class="w3-twothird">
-      <h1>Concepts I intend to use</h1>
-      <h5 class="w3-padding-32">
-      <table>
-        <tr>
-          <td>Session 04 - Functions</td>
-          <td>My game will determine the response using functions. Additionally, the maze will make use of functions to keep track of the win condition and lose condition</td>
-        </tr>
-        <tr>
-          <td>Session 05 - Events</td>
-          <td><p>The game will use buttons to interact with the user. The game will listen for when the user clicks the button, and execute the appropriate response</p>
-          <p>The maze portion of the game will listen for the user's arrow presses and move the 'character' as appropriate</p></td>
-        </tr>
-        <tr>
-          <td>Session 06 - My First Loop</td>
-          <td>The chatting portion of the game will not contain any loops. The maze part will use loops to check if the user has hit the win or lose condition and to update the 'character' to account for multiple responses</td>
-        </tr>
-        <tr>
-          <td>Session 08 - My First Dataset</td>
-          <td><p>While my game will not use a dataset, it will make use of 3D arrays to create the grid for the maze.</p>
-            <p>Each element of the array will contain an array consisting of 3 numbers (e.g(x,y,z)). x represents the x coordinate in the grid. y represents the y coordinate. z represents a boolean. If true, the user can move their 'character' to this (x,y) coordinate. If False, and the user moves here, they lose</p>
-          </td>
-        </tr>
-        <tr>
-          <td>Session 10 - My first Dashboard</td>
-          <td>Currently unsure of how I want to represent the start and end of my game. Will update this section as I figure things out</td>
-        </tr>
-      </table>
-      </h5>
-      <p class="w3-text-grey"></p>
+  </div>
+
+  <!-- Third Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+      <div class="w3-content">
+        <div class="w3-twothird">
+          <h1>Data</h1>
+          <h5 class="w3-padding-32">
+            
+            <p>The dialogue which the user encounters will change depending on the input. The game will keep track of the sequence of inputs to change dialogue appropriately.</p>
+            <p>The maze will require a use of a 2d array to create a list of possible moves. Functions will be added to keep track of the users progress through the maze, as well as determine any conditions for game over (e.g hit the wall)</p>
+            <p>Since the game will require about 5 minutes per run, it might get frustrating to start the game from the beginning every time the page reloads. If time persists, I would like to implement a feature where the user can continue from where they left off (need to consult TA for what to learn for this feature)</p>
+          </h5>
+    
+          <p class="w3-text-grey"></p>
+        </div>
+    
+        <div class="w3-third w3-center">
+          <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+        </div>
+      </div>
     </div>
+
+  <!-- Second Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+      </div>
+      <div class="w3-twothird">
+        <h1>Concepts I intend to use</h1>
+        <h5 class="w3-padding-32">
+        <table>
+          <tr>
+            <td>Session 04 - Functions</td>
+            <td>My game will determine the response using functions. There are multiple interactive elements. The buttons, tabs, textarea, passwords</td>
+          </tr>
+          <tr>
+            <td>Session 05 - Events</td>
+            <td><p>The game will use buttons to interact with the user. The game will listen for when the user clicks the button, and execute the appropriate response</p></td>
+          </tr>
+          <tr>
+            <td>Session 06 - My First Loop</td>
+            <td>The game will go through some for loops to determine the response depending on the situation in the game</td>
+          </tr>
+          <tr>
+            <td>Session 08 - My First Dataset</td>
+            <td><p>My game won't be using a direct dataset, but it will be using arrays which contain responses and followup options. This was the easiest way I could think of to generalise the code, without hardcoding every possible response</p>
+
+            </td>
+          </tr>
+          <tr>
+            <td>Session 10 - My first Dashboard</td>
+            <td>The dashboard will present some info and allow the user to switch through tabs at the top of the screen. The tabs will contain information regarding the game</td>
+          </tr>
+        </table>
+        </h5>
+        <p class="w3-text-grey"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+      <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
   </div>
 </div>
 
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+<div id="diaryEntries" class="tabcontent">
+  <!-- Header -->
+  <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">Diary Entries</h1>
+    <p class="w3-xlarge">Template by w3.css</p>
+  </header>
+
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Week 10</h1>
+        <h5 class="w3-padding-32">
+          <p><b>What is your project about?</b></p>
+          <p>Drifting apart</p>
+          <p><b>What is the data you plan to use?</b></p>
+          <p>Since I'm doing a game instead of a datastory, I don't have a direct data set. My game is a short interactive story. Since there are multiple options, I will make my own data set with all the responses and followup options</p>
+          <p><b>What is the question you plan to answer?</b></p>
+          <p>Will the 2 characters remain close friends?</p>
+          <p><b>Why is this an important question?</b></p>
+          <p>I've personally drifted apart from many friends even though we've been close friends in the past</p>
+          <p>Research has shown that past the 7th grade,<a href="https://journals.sagepub.com/doi/10.1177/0956797615588751">differences in compatability naturally lead to friendships dissolving</a></p>
+          <p>However, all is not lost. It just means that people need to take more initiative and put in effort to keep a friendship alive.
+            <a href="https://www.thezoereport.com/p/how-to-fix-a-friendship-thats-drifting-apart-according-to-a-relationship-expert-17027633">There are things people should try to do, and shouldn't do</a></p> 
+          <p><b>How do you intend to explore this question?</b></p>
+          <p>I've added a few different story paths so that the user can experience what it's like to see a friendship drifting apart. The different paths explore the different kinds of responses someone might have.</p>
+        </h5>
+      </div>
+      <div class="w3-third w3-center">
+        <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+      </div>
+      <div class="w3-twothird">
+        <h1>Week 11</h1>
+        <h5 class="w3-padding-32">
+          <p><b>Describe the interactions you intend to use</b></p>
+          <p>I intend to let the user text Jake, the friend. However, since I want them to text the correct phrase, after they select the dailogue option, when they try to text, the message box will auto populate with the message on every key stroke</p>
+          <p>I want the user to be able to click through the different contacts and read through their text log</p>
+          <p>I want the user to try texting the password to the "AI" system, iris. It will advance the game depending on if the password is correct or not</p>
+          <p>I want the user to be able to click on the profiles and access the profile pictures of all the 3 different contacts</p>
+          <p><b>Attribute anything you plan to use from elsewhere</b></p>
+          <p>Initially I wanted to attempt designing my own UI from scratch. After some trial and error, I decided that a template would serve me better. <a href="https://codepen.io/mubangadv/pen/rXrOQa">I found this template online</a>, however this template lacks any and all functionality. All interactions you see in my project were programmed in. There was no JS script in this template</p>
+          <p>While not a direct 1-1 translation, I also <a href="https://www.w3schools.com/howto/howto_js_vertical_tabs.asp">referred to this page from w3schools</a> to make the tabs work </p>
+        </h5>
+        <p class="w3-text-grey"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Third Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Week 12</h1>
+        <h5 class="w3-padding-32">
+          <p><b>Write the story board of the data story</b></p>
+          <p>User is a person who has recently moved to college, but was close friends with Jake. Due to some issue, he has been locked out of his phone</p>
+          <p>They have to type in the password. The player obviously doesn't know the password, but this will encourage him to look through the messages to look for the password</p>
+          <p>As the player reads the messages, they realise that they've drifted apart from their friends</p>
+          <p>After finding the password, the player can try to message the friend, and try to either fix or worsen the relationship</p>
+        </h5>
+        <p class="w3-text-grey"></p>
+      </div>
+      <div class="w3-third w3-center">
+        <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+      </div>
+      <div class="w3-twothird">
+        <h1>Progress Report</h1>
+        <h5 class="w3-padding-32">
+          <p>I didn't get much work done during week 10 and week 11, therefore my documentation from those 2 weeks are quite slim</p>
+          <p>Instead, I have compiled the documentation for my code <a href="documentation/Code documentation NM2207 A0234264H.docx"></ahref>here</p>
+        </h5>
+        <p class="w3-text-grey"></p>
+      </div>
+    </div>
+  </div>
+ 
+
+  <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+      <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+  </div>
 </div>
 
 <!-- Footer -->
@@ -166,3 +267,5 @@
 
 </body>
 </html>
+
+
